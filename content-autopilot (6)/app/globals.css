@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #002626;
+  --foreground: #EFE7DA;
+
+  /* Default theme (Original Ink) - overridden client-side via
+     document.documentElement.style.setProperty when the user picks
+     a different theme. See components/ThemeSwitcher.tsx */
+  --color-ink: #002626;
+  --color-teal: #0E4749;
+  --color-lime: #95C623;
+  --color-ember: #E55812;
+  --color-cream: #EFE7DA;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
